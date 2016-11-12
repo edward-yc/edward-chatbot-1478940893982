@@ -1,0 +1,12 @@
+applications:
+- path: target/JavaHelloWorldApp.war
+  memory: 512M
+  instances: 1
+  domain: mybluemix.net
+  name: edward-chatbot
+  host: edward-chatbot
+  disk_quota: 1024M
+  services:
+  - Conversation
+  - Speech to Text
+  - Text to Speech-c2
